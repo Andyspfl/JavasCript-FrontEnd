@@ -1,0 +1,38 @@
+.comicItem {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 200px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .comicImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .price {
+    color: #008CBA;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #006a8c;
+  }
+  
