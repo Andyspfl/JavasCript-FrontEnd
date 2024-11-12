@@ -1,16 +1,14 @@
 /* src/components/Button.css */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50; /* Verde */
-    color: white;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049; /* Verde más oscuro */
-  }
-  
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #050506; /* Azul suave */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+}
+
+button:hover {
+  background-color: #33333a; /* Azul más oscuro */
+}
+

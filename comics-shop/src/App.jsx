@@ -1,24 +1,37 @@
 import { useState } from 'react'
 import './App.css'
-import ComicItem from './components/ComicItem/ComicItem'
-import Button from './components/Button/Button'
-import NavBar from './components/NavBar/NavBar'
+import Header from './components/Header/Header'
+import Formulario from './components/Formulario/Formulario';
+import Registro from './components/Registro/Registro';
+import Contador from './components/Contador/Contador';
+import ContadorPalabras from './components/ContadorPalabras/ContadorPalabras';
 
 function App() {
-  // Definimos un estado para mostrar un mensaje
-  const [message, setMessage] = useState('¡Hola, mundo!');
-
-  // Función que cambia el mensaje cuando se hace clic en el botón
-  const handleClick = () => {
-    setMessage('¡Has hecho clic en el botón!');
+  const comic = {
+    imageUrl: 'https://i.pinimg.com/736x/88/1b/6d/881b6d3a4f84d72296ada537c611c582.jpg', // URL de la imagen del cómic
+    title: 'Spider-Man: Into the Spider-Verse',
+    description: 'Un cómic épico que sigue las aventuras de Spider-Man en múltiples dimensiones.',
+    price: 12.99
   };
+
+  const [contador, setContador] = useState(0);
+
+  const incrementar = () => setContador(contador + 1);
+  const decrementar = () => setContador(contador - 1)
 
   return (
     <div className="App">
-      <NavBar />
-      <h1>{message}</h1>
-      {/* Usamos el componente Button */}
-      <Button onClick={handleClick}>Hacer clic</Button>
+      
+      <Header />
+      <h3>Ahora veremos mas sobre como utilizar los eventos como `useState`</h3>
+      <h3>Contador: {contador}</h3>
+      <button onClick={incrementar}>Incrementar</button>
+      <button onClick={decrementar}>Decrementar</button>
+
+      <Formulario />
+      <Registro></Registro>
+      <Contador></Contador>
+      <ContadorPalabras></ContadorPalabras>
     </div>
   );
 }
