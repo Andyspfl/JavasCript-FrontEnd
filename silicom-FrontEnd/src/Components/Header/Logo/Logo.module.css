@@ -1,0 +1,15 @@
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* El contenedor ocupará todo el ancho disponible */
+    max-width: 160px; /* El tamaño máximo será de 300px */
+  }
+  
+  .logo {
+    width: 100%; /* El logo ocupará todo el ancho disponible de su contenedor */
+    max-width: 250px; /* Máximo tamaño del logo (250px), ajustable según tus necesidades */
+    height: auto; /* Mantener la relación de aspecto de la imagen */
+    object-fit: contain; /* La imagen se ajusta sin distorsionarse */
+  }
+  

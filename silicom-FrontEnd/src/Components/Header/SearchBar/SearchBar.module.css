@@ -1,0 +1,39 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%; /* El contenedor de la barra de búsqueda tendrá un tamaño del 50% */
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchInput {
+    border: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 20px;
+    width: 80%; /* El input ocupará el 80% del contenedor */
+  }
+  
+  .searchButton {
+    background-color: #dcdcdc; /* Fondo gris plomizo para el icono */
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 100%;
+  }
+  
+  .searchButton:hover {
+    background-color: #a8a8a8; /* Cambia a un tono gris más claro al hacer hover */
+  }
+  
+  .searchButton svg {
+    fill: #1D0259; /* El icono tiene un color azul oscuro */
+    width: 20px;
+    height: 20px;
+    
+  }
+  

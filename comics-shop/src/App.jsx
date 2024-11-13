@@ -5,6 +5,10 @@ import Formulario from './components/Formulario/Formulario';
 import Registro from './components/Registro/Registro';
 import Contador from './components/Contador/Contador';
 import ContadorPalabras from './components/ContadorPalabras/ContadorPalabras';
+import Tema from './components/Tema/Tema';
+import Carrusel from './components/Carrusel/Carrusel';
+import EncuestaOpnion from './components/EncuestaOpiniones/EncuestaOpinion';
+import FormAvanzado from './components/FormAvanzado/FormAvanzado';
 
 function App() {
   const comic = {
@@ -32,6 +36,10 @@ function App() {
       <Registro></Registro>
       <Contador></Contador>
       <ContadorPalabras></ContadorPalabras>
+      <Tema></Tema>
+      <Carrusel></Carrusel>
+      <EncuestaOpnion></EncuestaOpnion>
+      <FormAvanzado></FormAvanzado>
     </div>
   );
 }
