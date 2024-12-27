@@ -1,8 +1,0 @@
-.App{
-  /* // configuracion para que no tenga bordes y todo se vea al ras de la pantalla */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  
-}
