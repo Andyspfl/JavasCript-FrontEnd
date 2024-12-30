@@ -1,0 +1,100 @@
+/* Establecer el fondo y la fuente básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.containerPrincipal {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Vista previa donde se muestra el resultado */
+.vistaPrevia {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de números y operadores */
+.containerOfContainers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contenedor de números */
+.containerNumeros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 70%;
+}
+
+/* Contenedor de operadores */
+.containerOperadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    width: 28%;
+}
+
+/* Botones */
+.numero, .operador {
+    background-color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Estilo de botones al pasar el ratón */
+.numero:hover, .operador:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+/* Estilo de los operadores */
+.operador {
+    background-color: #ff9f00;
+    color: white;
+    font-weight: bold;
+}
+
+/* Botón de igual */
+.operador:last-child {
+    background-color: #4caf50;
+}
+
+/* Estilo de los botones de números */
+.numero {
+    background-color: #eeeeee;
+}
+
+.numero:active {
+    transform: scale(0.95);
+}
