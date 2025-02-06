@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Basica con js</title>
+    <title>Calculadora Básica con JS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="containerPrincipal">
-        <div class="vistaPrevia">Aqui se ve todo</div>
-        <div class="containerOfContainers">
+    <main class="containerPrincipal">
+        <!-- Vista previa de la operación -->
+        <section class="vistaPrevia">
+            <input type="text" placeholder="Aquí se ve todo" readonly>
+        </section>
+        
+        <!-- Contenedor de los números y operadores -->
+        <section class="containerOfContainers">
+            <!-- Números -->
             <div class="containerNumeros">
-                <div class="numero">1</div>
-                <div class="numero">2</div>
-                <div class="numero">3</div>
-                <div class="numero">4</div>
-                <div class="numero">5</div>
-                <div class="numero">6</div>
-                <div class="numero">7</div>
-                <div class="numero">8</div>
-                <div class="numero">9</div>
-                <div class="numero">0</div>
+                <button class="numero">1</button>
+                <button class="numero">2</button>
+                <button class="numero">3</button>
+                <button class="numero">4</button>
+                <button class="numero">5</button>
+                <button class="numero">6</button>
+                <button class="numero">7</button>
+                <button class="numero">8</button>
+                <button class="numero">9</button>
+                <button class="numero">0</button>
             </div>
+
+            <!-- Operadores -->
             <div class="containerOperadores">
-                <div class="operador">-</div>
-                <div class="operador">+</div>
-                <div class="operador">x</div>
-                <div class="operador">/</div>
-                <div class="operador">=</div>
+                <button class="operador">-</button>
+                <button class="operador">+</button>
+                <button class="operador">x</button>
+                <button class="operador">/</button>
+                <button class="operador">=</button>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

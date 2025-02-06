@@ -1,16 +1,10 @@
+// src/components/Logo/Logo.js
 import React from 'react';
-import style from './Logo.module.css'; // Asegúrate de tener el archivo de estilos correspondiente
+import logo from '../../assets/logo.png';
+import styles from './Logo.module.css';
 
-function Logo() {
-  return (
-    <div className={style.logoContainer}>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpB72uNCbIQqU94YMjuS4SGAKRDv5l3QSH9w&s"  // Asegúrate de poner la ruta correcta a tu logo
-        alt="Logo"
-        className={style.logo}
-      />
-    </div>
-  );
-}
+const Logo = () => {
+  return <img className={styles.logo} src={logo} alt="Logo" />;
+};
 
 export default Logo;

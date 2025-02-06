@@ -1,64 +1,6 @@
-/* UserActions.module.css */
-
-.userActions {
+/* src/components/UserActions/UserActions.module.css */
+.actions {
   display: flex;
-  align-items: center;   /* Alineamos verticalmente los íconos y el texto */
-  gap: 20px;  /* Espacio entre los enlaces */
-}
-
-.userAction {
-  font-size: 16px;
-  text-decoration: none;
-  color: #1D0259; /* Color de texto */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.3s ease;
-}
-
-.userAction:hover {
-  color: #4A106B; /* Color al hacer hover */
-}
-
-.userAction svg {
-  width: 20px;
-  height: 20px;
-  fill: #1D0259; /* Color del icono */
-}
-
-.cartIcon {
-  padding: 8px;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cartIcon:hover {
-  background-color: #a8a8a8; /* Fondo más claro al hacer hover */
-}
-
-.cartIcon svg {
-  fill: #1D0259; /* Color del icono */
-  width: 20px;
-  height: 20px;
-}
-
-/* Opcional: añadir un pequeño contador en el carrito */
-.cartIcon:after {
-  content: "3"; /* Cambia esto por el número real de artículos en el carrito */
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
